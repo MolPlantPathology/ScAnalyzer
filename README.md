@@ -14,7 +14,7 @@ Then activate the environment
 ```
 conda activate scanalyzer
 ```
-If you do not want to use conda, just clone the GitHub repo, and make sure that the most important dependencies are installed: `Python version 3.11.0`, `cv2 version 4.7.0`, `R version 4.2.0`, with the following packages loaded `readr_2.1.4     dplyr_1.1.3     ggpubr_0.4.0    patchwork_1.1.1 ggplot2_3.4.4`.
+If you do not want to use conda, just clone the GitHub repo, and make sure that the most important dependencies are installed: `Python version 3.11.0`, `cv2 version 4.7.0`, `R version 4.2.0`, with the following packages loaded `readr_2.1.4 dplyr_1.1.3 ggpubr_0.4.0 patchwork_1.1.1 ggplot2_3.4.4`.
 
 ## Compatibility
 ScAnalyzer was developped and extensively tested in macOS Mojave. Other operating systems were not tested.
@@ -66,4 +66,3 @@ If ScAnalyzer was useful for your work, please cite:
 ```
 Paauw, M., Hardeman, G., Pfeilmeier, S., van den Burg, H.A., ScAnalyzer: an image processing tool to monitor disease symptoms and bacterial spread in Arabidopsis thaliana leaves. *Journal title* (2024).
 ```
-
