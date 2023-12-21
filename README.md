@@ -2,11 +2,7 @@
 ScAnalyzer is an image processing tool developped in the Molecular Plant Pathology lab of the University of Amsterdan, the Netherlands. The purpose of the tool is to monitor disease symptoms and bacterial spread in *Arabidopsis thaliana* leaves.
 
 ## Installation and dependencies
-To install ScAnalyzer, first download the GitHub repo
-```
-git clone xxxx
-```
-Because ScAnalyzer relies on several dependencies (most importantly, thhe python library openCV, and specific versions of R packages for the autoplot function), it is recommended to use an environment manager such as [conda](https://conda.io/projects/conda/en/latest/user-guide/getting-started.html). Use the `scanalyzer.yaml` file to create a new conda environment with all dependencies preinstalled.
+To install ScAnalyzer, first download the GitHub repo, either by cloning the repository of by simply downloading the .zip file from GitHub. Because ScAnalyzer relies on several dependencies (most importantly, the python library openCV, and specific versions of R packages for the autoplot function), it is recommended to use an environment manager such as [conda](https://conda.io/projects/conda/en/latest/user-guide/getting-started.html). Use the `scanalyzer.yaml` file to create a new conda environment with all dependencies preinstalled.
 ```
 conda env create -f scanalyzer.yml
 ```
