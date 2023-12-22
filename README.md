@@ -4,13 +4,15 @@ ScAnalyzer is an image processing tool developped in the Molecular Plant Patholo
 ## Installation and dependencies
 To install ScAnalyzer, first download the GitHub repo, either by cloning the repository of by simply downloading the .zip file from GitHub. Because ScAnalyzer relies on several dependencies (most importantly, the python library openCV, and specific versions of R packages for the autoplot function), it is recommended to use an environment manager such as [conda](https://conda.io/projects/conda/en/latest/user-guide/getting-started.html). Use the `scanalyzer.yaml` file to create a new conda environment with all dependencies preinstalled.
 ```
-conda env create -f scanalyzer.yml
+conda env create -f scanalyzer.yaml
 ```
 Then activate the environment
 ```
 conda activate scanalyzer
 ```
-If you do not want to use conda, just clone the GitHub repo, and make sure that the most important dependencies are installed: `Python version 3.11.0`, `cv2 version 4.7.0`, `R version 4.2.0`, with the following packages loaded `readr_2.1.4 dplyr_1.1.3 ggpubr_0.4.0 patchwork_1.1.1 ggplot2_3.4.4`.
+If you do not want to use conda, just clone the GitHub repo, and make sure that the most important dependencies are installed: `Python version 3.11.0`, `cv2 version 4.7.0`.
+
+The dependencies for the autoplotting function could not be packaged into the `.yaml` file. The autoplotter needs R `R version 4.2.0`, with the following packages `readr_2.1.4 dplyr_1.1.3 ggpubr_0.4.0 patchwork_1.1.1 ggplot2_3.4.4`. With other versions of R or these packages, the autoplot functionality is not guaranteed. The image analysis part of the pipeline should not be affected if you don't have the correct R dependencies, however.
 
 ## Compatibility
 ScAnalyzer was developped and extensively tested in macOS Mojave. Other operating systems were not tested.

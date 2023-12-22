@@ -247,4 +247,6 @@ if __name__ == "__main__":
 
 	# Call R autoplotter
 	if args.autoplot:
-		subprocess.call("Rscript autoplotter.R "+args.prefix+"_data.csv", shell=True)
+		script_directory = os.path.dirname(os.path.abspath(__file__))
+		print(script_directory)
+		subprocess.call("Rscript "+script_directory+"/autoplotter.R "+args.prefix+"_data.csv", shell=True)
