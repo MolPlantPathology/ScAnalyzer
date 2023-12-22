@@ -36,9 +36,9 @@ options:
 ## Example: Running ScAnalyzer
 To run ScAnalyer on the provided samples, run the following command:
 ```bash
-python3 scanalyzer.py -leaves M65M66_14dpi_l.jpg -film M65M66_14dpi_s.jpg -samples M65M66_14dpi.csv -prefix M65M66_14dpi --autoplot
+python3 scanalyzer.py -leaves data/M65M66_14dpi_l.jpg -film data/M65M66_14dpi_s_m.jpg -samples data/M65M66_14dpi.csv -prefix M65M66_14dpi --autoplot
 ```
-This gives you two new `.jpg` files with the leafs and the bacterial bioluminescence data, annotated with the area that has been detected by ScAnalyzer. In addition, you should get the output datatable, and an automatically generated plot for quick insights in your data. If you don't want the autoplot, simply omit the `--autoplot` flag.
+This gives you two new `.jpg` files with the leaves and the bacterial bioluminescence data, annotated with the area that has been detected by ScAnalyzer. In addition, you should get the output datatable, and an automatically generated plot for quick insights in your data. If you don't want the autoplot, simply omit the `--autoplot` flag.
 
 ## Example: Combining multiple experiments
 Often, experiments can contain more samples than the 126 that fit on one sampling sheet. In that case, process different sample sheets indepedently. Then combine the output files either manually (in e.g. Excel) or on the command line:
