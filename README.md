@@ -1,5 +1,5 @@
 # ScAnalyzer
-ScAnalyzer is an image processing tool developped in the Molecular Plant Pathology lab of the University of Amsterdan, the Netherlands. The purpose of the tool is to monitor disease symptoms and bacterial spread in *Arabidopsis thaliana* leaves.
+ScAnalyzer is an image processing tool developped in the Molecular Plant Pathology lab of the University of Amsterdan, the Netherlands. The purpose of the tool is to monitor disease symptoms and bacterial spread in *Arabidopsis thaliana* leaves. A full description of the tool is published in [*BMC Plant Methods*](https://link.springer.com/article/10.1186/s13007-024-01213-3).
 
 ## Installation and dependencies
 To install ScAnalyzer, first download the GitHub repo, either by cloning the repository of by simply downloading the .zip file from GitHub. Because ScAnalyzer relies on several dependencies (most importantly, the python library openCV, and specific versions of R packages for the autoplot function), it is recommended to use an environment manager such as [conda](https://conda.io/projects/conda/en/latest/user-guide/getting-started.html). Use the `scanalyzer.yaml` file to create a new conda environment with all dependencies preinstalled.
@@ -57,10 +57,13 @@ Rscript autoplotter.R M65M66_total_data.csv
 Alternatively, you can explore the data yourself.
 
 ## Adapting ScAnalyzer to your lab
-You may need to adapt ScAnalyzer in your lab. For example, your image conditions may be different. In that case, you could try to adapt the thresholds to detect the leaf itself (line xx ), to seperate chlorotic from healthy tissue (line xx), or to select the bacteria colonized area (line xx). Be sure to record this carefully and report the thresholds used in your analysis.
+You may need to adapt ScAnalyzer in your lab. For example, your image conditions may be different. In that case, you could try to adapt the thresholds to detect the leaf itself (L133-L134), to seperate chlorotic from healthy tissue (L105-L106), or to select the bacteria colonized area (L213). Be sure to record this carefully and report the thresholds used in your analysis.
 
 ## Citation
 If ScAnalyzer was useful for your work, please cite:
 ```
-Paauw, M., Hardeman, G., Pfeilmeier, S., van den Burg, H.A., ScAnalyzer: an image processing tool to monitor disease symptoms and bacterial spread in Arabidopsis thaliana leaves. *Journal title* (2024).
+Paauw, M., Hardeman, G., Taks, N.W., Lambalk, L., Berg, J.A., Pfeilmeier, S., van den Burg, H.A., ScAnalyzer: an image processing tool to monitor disease symptoms and bacterial spread in Arabidopsis thaliana leaves. *BMC Plant Methods* (2024).
 ```
+
+## License
+This software is released under the MIT License.
